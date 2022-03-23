@@ -1,0 +1,15 @@
+[package]
+name = "hello-rocket"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4"
+chrono = { version = "0.4.10", features = ["serde"] }
+diesel = { version = "1.4.4", features = ["postgres","uuidv07", "r2d2", "chrono"] }
+r2d2 = "0.8.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.2"
+derive_more = "0.99.2"
